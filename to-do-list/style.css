@@ -6,7 +6,7 @@
 
 body
 {
-    background-image: linear-gradient(90deg, #1e4253, #479aaa);
+    background-color: #25282b;
     color: white;
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
@@ -36,7 +36,7 @@ form input, form button
 
 form button
 {
-    color: #479aaa;
+    color: #1A2C39;
     background: white;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -45,5 +45,59 @@ form button
 form button:hover
 {
     color: white;
-    background: #479aaa;
+    background: #25282b;
+}
+
+.todo-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list
+{
+    min-width: 30%;
+    list-style: none;    
+}
+
+.todo
+{
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo li
+{
+    flex: 1;
+}
+
+.trash-btn, .complete-btn
+{
+    background: #d17058;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.complete-btn
+{
+    background: rgb(103, 202, 99);
+}
+
+.todo-item
+{
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash, fa-check
+{
+    pointer-events: none;
 }
